@@ -7,6 +7,10 @@ class User {
   read (text) {
     return (this.name + ' is reading ' + text)
   }
+
+  notify (post) {
+    return this.read(post.summary)
+  }
 }
 
 module.exports = User
